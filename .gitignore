@@ -30,6 +30,7 @@ ENV/
 *.env.local
 
 README.md
+
 PROJECT_CONTEXT.md
 
 # ─────────────────────────────────────────
