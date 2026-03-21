@@ -53,9 +53,6 @@ Study how different database models behave when recommendation data grows over t
 │   └── benchmark_results.csv # Output of benchmark_temporal.py
 ├── plots/                    # Plots produced by analyze_results.py
 ├── docs/
-│   ├── temporal_queries.md   # Query definitions and rationale
-│   ├── schema_overview.md    # Schema design decisions
-│   └── results_summary.md    # Findings per query
 ├── .env                      # Local connection strings (not committed)
 ├── .env.example              # Template for .env
 ├── config.py                 # Loads .env and exposes connection objects
