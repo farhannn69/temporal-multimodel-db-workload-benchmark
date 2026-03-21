@@ -28,13 +28,15 @@ Study how different database models behave when recommendation data grows over t
 
 ```
 ├── data/
-│   ├── raw/                  # Downloaded MovieLens files (not committed)
+│   ├── raw/                  # Downloaded MovieLens 1M files (not committed)
 │   └── processed/            # Cleaned CSVs produced by prepare_data.py
 ├── db/
-│   ├── postgres/             # schema.sql, queries.sql
+│   ├── postgres/             # schema.sql, queries.sql, queries.py
 │   ├── mongo/                # setup_indexes.js, queries.js
 │   └── neo4j/                # schema.cypher, queries.cypher
 ├── scripts/
+│   ├── analyze_results.py    # For creating result data
+│   ├── benchmark_temporal.py # For running benchmarks
 │   ├── prepare_data.py       # Preprocess MovieLens → interactions_12m.csv
 │   ├── test_*_connection.py  # Verify DB connectivity
 │   ├── load_postgres.py      # Bulk-load data into PostgreSQL
